@@ -13,7 +13,7 @@ export async function POST(request: NextRequest){
         return NextResponse.json({success: false, error: error.message}, {status: 400});
     }
 }
-
+ 
 export async function GET(request: NextRequest){
     await DbConnection();
     try {
